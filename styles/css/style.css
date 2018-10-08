@@ -1,0 +1,1115 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth
+}
+body {
+  background-color: hsla(26, 27%, 46%, 0.2);
+  background: -webkit-linear-gradient(right bottom top, hsla(240, 100%, 80%, 0.4),hsla(240, 100%, 35%, 0.1)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(top left,hsla(240, 100%, 80%, 0.4),hsla(240, 100%, 35%, 0.1)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(top left, hsla(240, 100%, 80%, 0.4),hsla(240, 100%, 35%, 0.1)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to top left, hsla(240, 100%, 80%, 0.4),hsla(240, 100%, 35%, 0.1)); /* Standard syntax */
+  color: #696969;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 100%;
+  margin: 0px;
+  padding: 0px;
+  background: url("../../img/bkg/grape-purple.svg");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;    
+}
+p {
+  color: hsl(240, 100%, 40%);
+  background-color: hsla(240, 100%, 95%, 0.8);
+  border-radius: 10px;
+  margin: 0px;
+  padding: 10px;
+    text-align: center;
+    font-size: 1em;
+}
+p.txty {
+  color: hsl(240, 100%, 40%);
+  background-color: hsla(240, 100%, 95%, 0.7);
+  font-family: 'Oldenburg', "Lucida Grande", sans-serif;
+  font-weight: 800;
+  border-radius: 10px;
+  margin: 10px auto;
+  padding: 10px;
+  width: 90%;
+  text-align: left;
+  line-height: 1.2em;
+  font-size: 1.4em;
+  position: relative;
+}
+p.txty::after {
+  content: "";
+  background:  url("../../img/bkg/leaf_green_1920x1280.svg") center /100% no-repeat;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+  border-radius: 10px; 
+}
+p.kont {
+  color: hsl(240, 100%, 40%);
+  background-color: hsla(240, 100%, 95%, 0.7);
+  font-family: 'Oldenburg', "Lucida Grande", sans-serif;
+  font-weight: 800;
+  border-radius: 10px;
+  margin: 10px auto;
+  padding: 10px;
+  width: 95%;
+  text-align: center;
+  line-height: 1.6em;
+  font-size: 1.5em;
+  position: relative;
+}
+p.kont::after {
+  content: "";
+  background:  url("../../img/bkg/leaf_green_1920x1280.svg") center /100% repeat;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+  border-radius: 10px; 
+}
+ .slideUp {
+    animation-name: slideUp;
+    -webkit-animation-name: slideUp;
+    animation-duration: 1.5s;
+    -webkit-animation-duration: 1.5s;
+    visibility: visible;
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+          -ms-transform: translate(50%, 50%);
+    -webkit-transform: translate(50%, 50%);
+    transform: translate(50%, 50%);
+    }
+       50% {
+        opacity: 0.5;
+    -ms-transform: scale(0.5, 0.5) skew(10deg, 10deg);
+    -webkit-transform: scale(0.5, 0.5) skew(10deg, 10deg);
+    transform: scale(0.5, 0.5) skew(10deg, 10deg);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+@-webkit-keyframes slideUp {
+     0% {
+        opacity: 0;
+          -ms-transform: translate(50%, 50%);
+    -webkit-transform: translate(50%, 50%);
+    transform: translate(50%, 50%);
+    }
+       50% {
+        opacity: 0.5;
+    -ms-transform: scale(0.5, 0.5) skew(10deg, 10deg);
+    -webkit-transform: scale(0.5, 0.5) skew(10deg, 10deg);
+    transform: scale(0.5, 0.5) skew(10deg, 10deg);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+.hidebox {opacity: 0;}
+img.ssld {
+    width: 100%;
+    height: 50vh;
+    overflow-y: hidden;
+    object-fit: cover;
+    -webkit-animation: slide 9s linear 0s infinite alternate; /* Safari 4.0 - 8.0 */
+    animation: slide 9s linear 0s infinite;
+}
+img.sld {
+    width: 100%;
+    height: 100vh;
+    overflow-y: hidden;
+    object-fit: cover;
+    -webkit-animation: slide 9s linear 0s infinite alternate; /* Safari 4.0 - 8.0 */
+    animation: slide 9s linear 0s infinite;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes slide {
+    0%   {transform: scale(1,1);}
+    100% {transform: scale(1.2,1.2) translate(-50px, -50px);}
+} 
+/* Standard syntax */
+@keyframes slide {
+    0%   {transform: scale(1,1);}
+    100% {transform: scale(1.2,1.2) translate(-50px, -50px);}
+} 
+img.fot {
+     height: 8em;
+  }
+img.erb {
+  position: absolute;
+  width: 30%;
+ top: 60%;
+  left: 50%;
+      padding: 0px;
+    -ms-transform: translate(-50%, -50%) rotate(1deg) skew(3deg,2deg); /* IE 9 */
+    -webkit-transform: translate(-50%, -50%) rotate(1deg) skew(3deg,2deg); /* Safari 3-8 */
+    transform: translate(-50%, -50%) rotate(1deg) skew(3deg,2deg);
+    animation-name: fadinglogo;
+    -webkit-animation-name: fadinglogo;
+    animation-duration: 10s;
+    -webkit-animation-duration: 10s;
+    animation-fill-mode: forwards;
+    animation-delay: 5s;
+}
+
+@keyframes fadinglogo {
+    0% {
+        opacity: 1;
+    }
+       50% {
+        opacity: 0.5;
+
+    }
+    100% {
+        opacity: 0.0;
+    }
+}
+
+@-webkit-keyframes fadinglogo {
+    0% {
+        opacity: 1;
+    }
+       50% {
+        opacity: 0.5;
+
+    }
+    100% {
+        opacity: 0.0;
+    }
+}
+.rep {
+    position: relative;
+      margin: 0px;
+    padding: 0px;
+      display: -webkit-flex;
+  display: flex;
+  height: auto;
+  flex-flow: row wrap;
+  justify-content:space-around; 
+    width: 100%;
+      border-radius: 10px; 
+
+}
+.knt {
+    overflow: hidden;
+        width: 40%;
+    height: auto;
+    } 
+div.imgs:hover {
+    margin: 0px;
+    border-radius: 10px 10px;
+}
+div.imgs img {
+    width: 100%;
+    height: auto;
+}
+.imgs {
+    overflow: hidden;
+        width: 40%;
+    height: auto;
+    } 
+#mImg {
+    border-radius: 10px; 
+    cursor: pointer;
+    transition: 5s;  
+}
+#mImg:hover {
+    -ms-transform: scale(1.2,1.2) translate(30px, 30px); /* IE 9 */
+    -webkit-transform: scale(1.2,1.2) translate(30px, 30px); /* Safari */
+    transform: scale(1.2,1.2) translate(30px, 30px); /* Standard syntax */
+}
+iframe.map { 
+    margin: 0px;
+    border-radius: 10px;
+    height: 100%; 
+    width: 100%;
+}
+a.footer {
+border: none;
+  padding: 0px;
+  border-radius: 0px; 
+}
+div.foo {
+       padding: 5px 10px;
+}
+.tite {
+   position: absolute;
+   top: 25%;
+   left: 50%;
+   font-family: 'Stoke', 'Oldenburg', "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+   font-size: 2.3em;
+   font-weight: 900;
+   text-align: center;
+   padding: 5px 20px;
+   color: hsla(240, 100%, 35%, 1);
+   text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+   -ms-transform: translate(-50%, -50%) rotate(1deg) skew(3deg,2deg); /* IE 9 */
+   -webkit-transform: translate(-50%, -50%) rotate(1deg) skew(3deg,2deg); /* Safari 3-8 */
+   transform: translate(-50%, -50%) rotate(1deg) skew(3deg,2deg);
+    animation-name: fadingtite;
+    -webkit-animation-name: fadingtite;
+    animation-duration: 20s;
+    -webkit-animation-duration: 20s;
+    animation-fill-mode: forwards;
+    animation-delay: 10s;
+}
+
+@keyframes fadingtite {
+    0% {
+        opacity: 1;
+    }
+       50% {
+        opacity: 0.5;
+
+    }
+    100% {
+        opacity: 0.0;
+    }
+}
+
+@-webkit-keyframes fadingtite {
+    0% {
+        opacity: 1;
+    }
+       50% {
+        opacity: 0.5;
+
+    }
+    100% {
+        opacity: 0.0;
+    }
+}
+ .tite::after {
+  content: "";
+  background:  url("../../img/bkg/wood_brown1920.svg") center /100% no-repeat;
+  opacity: 0.9;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+/* Style the header */
+.header {
+    padding: 0px;
+    text-align: center;
+}
+.row {
+  display: -webkit-flex;
+  display: flex;
+  height: auto;
+  flex-flow: row wrap;
+  justify-content:space-around; 
+}
+
+.column {
+  width: 100%;
+  margin: 10px 0;
+
+}
+.footer {
+  position: relative;
+  text-align: center;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around; 
+  color: hsl(240, 100%, 60%);
+  font-family: 'Exo 2', cursive, Helvetica, sans-serif;
+  text-align: left;
+  font-weight: 900;
+  background-color: hsla(240, 100%, 94%, 0.8);
+  margin: 0px 0px; 
+  padding: 10px 10px;
+  border-radius: 20px 20px 0px 0px ;
+}
+.footer::after {
+  content: "";
+  background:  url("../../img/bkg/leaf_red_1920x1280.svg") center /100% repeat;
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+  border-radius: 20px 20px 0px 0px;
+}    
+h1 {
+  font-family: 'Cardo','Stoke', Verdana, Geneva, sans-serif;
+  color: hsl(210, 100%, 80%);
+  background: hsla(240, 100%, 35%, 1); /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top bottom, hsla(240, 100%, 35%, 1), hsla(240, 100%, 35%, 0.5)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, hsla(240, 100%, 35%, 1), hsla(240, 100%, 35%, 0.5)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, hsla(240, 100%, 35%, 1), hsla(240, 100%, 35%, 0.5)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, hsla(240, 100%, 35%, 1), hsla(240, 100%, 35%, 0.5)); /* Standard syntax */
+  text-align: center;
+  padding: 5px 10px;
+  width:auto;
+  border: 5px ridge hsla(240, 100%, 35%, 1);
+  border-radius: 20px ;
+ }
+.titul {
+  width: 100%;
+     background-color: hsla(240, 100%, 94%, 0.6);
+  background: -webkit-linear-gradient(top, hsla(26, 27%, 46%, 0.0), hsla(26, 27%, 46%, 0.9),hsla(26, 27%, 46%, 0.3)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom , hsla(26, 27%, 46%, 0.0), hsla(26, 27%, 46%, 0.9),hsla(26, 27%, 46%, 0.3)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom , hsla(26, 27%, 46%, 0.0), hsla(26, 27%, 46%, 0.9),hsla(26, 27%, 46%, 0.3)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom , hsla(26, 27%, 46%, 0.0), hsla(26, 27%, 46%, 0.9),hsla(26, 27%, 46%, 0.3)); /* Standard syntax */
+  text-align: center;
+  margin: 0px auto 1px; 
+    padding: 10px 10px 10px;
+      position: relative;
+ } 
+.titul::after {
+  content: "";
+  background:  url("../../img/bkg/wood_brown1920.svg") center /100% no-repeat;
+  opacity: 0.8;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}  
+span.mez {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  margin: 0px;
+  height: 10%;
+  background-color: hsla(240, 100%, 94%, 0.6);
+  background: -webkit-linear-gradient(top, hsla(26, 27%, 46%, 0.0), hsla(26, 27%, 46%, 0.9),hsla(26, 27%, 46%, 0.3)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom , hsla(26, 27%, 46%, 0.0), hsla(26, 27%, 46%, 0.9),hsla(26, 27%, 46%, 0.3)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom , hsla(26, 27%, 46%, 0.0), hsla(26, 27%, 46%, 0.9),hsla(26, 27%, 46%, 0.3)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom , hsla(26, 27%, 46%, 0.0), hsla(26, 27%, 46%, 0.9),hsla(26, 27%, 46%, 0.3)); /* Standard syntax */
+  -ms-transform: translate(0%, 0%) rotate(0deg); /* IE 9 */
+  -webkit-transform: translate(0%, 0%) rotate(0deg); /* Safari 3-8 */
+  transform: translate(-50%, 50%) rotate(0deg);
+}
+span.mez::after {
+  content: "";
+  background:  url("../../img/bkg/wood_brown1920.svg") center /100% no-repeat;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+.odru{
+    display: -webkit-flex;
+  display: flex;
+flex-flow: row wrap;
+  justify-content:space-around;
+   padding: 0px;
+  margin : 0px;
+       width: 19%; 
+}
+.odrudy{
+    display: -webkit-flex;
+  display: flex;
+flex-flow: row wrap;
+  justify-content:space-around;
+   padding: 0px;
+  margin : 0px;
+       width: 100%; 
+}
+
+.odruda {
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content:space-around;
+  padding: 10px;
+  margin : 10px;
+  width: 48%; 
+  height: 90%;
+  border-radius: 10px;
+}
+
+.karta {
+      height: 80%;
+     width: 90%; 
+     margin : 0px;  
+     border-radius: 10px;
+        
+}
+img.kar {
+      height: auto;
+     width: 100%; 
+     margin : 0px;  
+     border-radius: 10px;
+        
+}
+.name {
+      height: 15%;
+     width: 90%; 
+     font-weight: 800;
+     font-family: 'Cardo','Oldenburg',"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+     font-size: 1.2em;
+     text-align: center;
+     margin: 0px; 
+     padding: 0px;
+     color: hsl(210, 100%, 80%);
+     background-color: hsla(240, 100%, 35%, 1);
+     border-radius: 10px;
+} 
+div.artclbox{
+    display: -webkit-flex;
+  display: flex;
+  align-items: stretch;
+  height: 20%;
+flex-flow: column wrap;
+  justify-content:space-around;
+  padding: 10px 5px;
+  margin : 5px 0px;
+}
+
+div.artbx {
+        display: -webkit-flex;
+  display: flex;
+  height: auto;
+  flex-flow: row wrap;
+  justify-content:space-around; 
+   padding: 10px 5px;
+  margin : 5px 0px;
+  border-radius: 10px;
+}
+
+div.sidetxt {
+  display: -webkit-flex;
+  display: flex;
+  width: 70%;
+  flex-flow: column wrap;
+  justify-content:space-around;
+  border-radius: 10px;
+}
+
+div.artimg {
+      height: auto;
+     width: 28%; 
+     margin : 0px; 
+     border-radius: 10px;         
+}
+
+div.ttl {
+     height: 20%;
+     width: 100%;
+     font-weight: 800;
+     position: relative;
+     font-family: 'Cardo','Oldenburg',"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+     font-size: 1.2em;
+     text-align: center;
+     margin: 5px auto 5px; 
+     padding: 5px;
+     color: hsl(210, 100%, 80%);
+     background-color: hsla(240, 100%, 35%, 1);
+     border-radius: 10px;
+}
+div.ttl::after {
+  content: "";
+  background:  url("../../img/bkg/leaf_red_1920x1280.svg") center /100% repeat;
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+  border-radius: 10px;
+} 
+div.cont {
+  height: 70%;
+    position: relative;
+     color: hsl(240, 100%, 40%);
+     font-family: 'Cardo','Oldenburg',"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+     font-weight: 700;
+     font-size: 1.1em;
+     text-align: center;
+     background-color: hsla(240, 100%, 95%, 0.8);
+   padding: 10px 10px  10px 10px;
+ }
+div.cont::after {
+  content: "";
+  background:  url("../../img/bkg/leaf_green_1920x1280.svg") center /100% no-repeat;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+  border-radius: 10px; 
+} 
+a.obrzk {
+    background-color: none; 
+    color: none;
+    border:none;
+    text-decoration: none;
+    padding: 0px;
+    margin: 3px;
+    border-radius: 10px;
+  }
+a.lnk {    display: block;
+     float: left;
+    text-decoration: none;
+    outline: 0;
+    border-radius: 10px;
+}
+
+a.lnk:link {
+    display: block;
+    float: left;
+    background-color: hsla(240, 100%, 35%, 0.7); 
+    color: hsl(210, 100%, 80%);
+    font-weight: 300;
+    padding: 1px 3px;
+    margin: 2px;
+    text-align: left;
+    text-decoration: none;
+    border-radius: 10px;
+  }
+a.lnk:visited {
+  background-color: hsla(240, 100%, 35%, 0.6); 
+    color: hsl(210, 100%, 90%);
+}
+
+a.lnk:hover  {
+    background-color: hsl(210, 100%, 80%); 
+    color: hsla(240, 100%, 35%, 1);
+}
+a.lnk:active {
+  background-color: olive;
+  color: pink;
+       }
+
+a.clcktrgh {
+      display: block;
+     float: right;
+     position: relative;
+       color: hsl(240, 100%, 95%);
+  font-family: 'Ubuntu','Cardo',"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-weight: 900;
+  font-size:1.2em;
+  text-align: center;
+   background-color: hsla(240, 100%, 35%, 0.6);
+      margin: 2px auto 1px; 
+  padding: 2px 4px;
+  border-radius: 10px;
+  
+}
+
+img.artcls {
+       width: 100%;
+       vertical-align: middle;
+       z-index: 1;
+       border-radius: 10px;
+} 
+.mySlides {display: none;}
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin: 0 0 0px;
+  overflow: hidden;
+}
+
+/* Caption text */
+.text {
+  display: none;
+  font-family: 'Cardo',"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  color: white;
+  font-size: 1.5em;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 7%;
+  width: 100%;
+  text-align: center;
+      -ms-transform: rotate(1deg); /* IE 9 */
+    -webkit-transform:  rotate(1deg); /* Safari 3-8 */
+    transform: rotate(1deg);
+ }
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.dots {
+  position: absolute;
+  bottom: 12%;
+  left: 50%;
+    -ms-transform: translate(-50%, -50%) rotate(1deg) skew(3deg,2deg); /* IE 9 */
+    -webkit-transform: translate(-50%, -50%) rotate(1deg) skew(3deg,2deg); /* Safari 3-8 */
+    transform: translate(-50%, -50%) rotate(1deg) skew(3deg,2deg);
+}
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: hsla(26, 27%, 86%, 0.9);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: hsla(26, 27%, 56%, 0.9);
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .8} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .8} 
+  to {opacity: 1}
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .row {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+     padding: 5px 2px;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  height: auto;
+  width: 100%;
+      z-index: 1; /* Sit on top */
+    -ms-transform: translate(-50%, -50%) rotate(1deg); /* IE 9 */
+    -webkit-transform: translate(-50%, -50%) rotate(1deg); /* Safari 3-8 */
+    transform: translate(-50%, -50%) rotate(1deg);
+ display: -webkit-flex;
+  display: flex;
+   flex-flow: row wrap;
+  justify-content:space-around;
+}
+ .topnav::after {
+  content: "";
+  background:  url("../../img/bkg/dark_wood2000.svg") center /100% repeat;
+  opacity: 0.8;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+
+.topnav a {
+      font-family: 'Ubuntu','Cardo',"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+   color: #f2f2f2;
+  text-align: center;
+  padding: 4px 6px;
+  text-decoration: none;
+  font-size: 1.1em;
+      transition: 0.6s;
+       border-bottom: 5px solid transparent;
+}
+
+.topnav a:hover {
+ border-bottom: 4px solid white;
+     -webkit-animation: mymove 5s; /* Chrome, Safari, Opera */
+    animation: mymove 5s;
+    animation-fill-mode: forwards;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    0% {border-top: 1px solid white;} 
+    25% {border-top: 2px dotted white;}
+    50% {border-top: 3px solid white;}
+    75% {border-top: 4px  dotted white;}
+    100% {border-top: 5px solid white;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    0% {border-top: 1px solid white;} 
+    25% {border-top: 2px dotted white;}
+    50% {border-top: 3px solid white;}
+    75% {border-top: 4px  dotted white;}
+    100% {border-top: 5px solid white;}
+}
+
+@media screen and (max-width: 600px) {
+   .topnav {
+      background-color: hsla(240, 100%, 60%, 0.0);
+  overflow: hidden;
+     padding: 0px;
+     top: 0;
+  left: 0;
+     flex-flow: column wrap;
+  justify-content:space-around;
+    -ms-transform: translate(0%, 0%) rotate(0deg); /* IE 9 */
+    -webkit-transform: translate(0%, 0%) rotate(0deg); /* Safari 3-8 */
+    transform: translate(0%, 0%) rotate(0deg);
+} 
+ .topnav::after {
+  content: "";
+  background:  url("../../img/bkg/dark_wood2000.svg") center /100% repeat;
+  opacity: 0.7;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}           
+  .topnav a {
+         padding: 15px 10px;
+    display: none;
+      flex-flow: column wrap;
+  justify-content:space-around; 
+  }
+    .tite {
+  position: absolute;
+   top: 20%;
+  left: 50%;
+  font-size: 2em;
+   font-weight: 900;
+  padding: 2px;
+}
+img.erb {
+  position: absolute;
+  width: 50%;
+ top: 55%;
+  left: 50%;
+}
+img.sld {
+    width: 100%;
+    height: 100vh;
+    overflow-y: hidden;
+    object-fit: cover;
+    -webkit-animation: slide 9s linear 0s infinite alternate; /* Safari 4.0 - 8.0 */
+    animation: slide 9s linear 0s infinite;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes slide {
+    0%   {transform: scale(1,1);}
+    100% {transform: scale(1.2,1.2)}
+} 
+/* Standard syntax */
+@keyframes slide {
+    0%   {transform: scale(1,1);}
+    100% {transform: scale(1.2,1.2)}
+} 
+.row {
+    flex-flow: column wrap;
+  justify-content:space-around; 
+}
+.knt {
+    overflow: hidden;
+        width: 100%;
+    height: auto;
+    } 
+.column {
+    width: 100%;
+}
+.footer {
+    height: auto;
+  width: 100%;
+      flex-flow: column wrap;
+  justify-content:space-around; 
+  color: hsl(240, 100%, 60%);
+   text-align: center;
+  line-height: 1em;
+  font-size: 1.1em;
+   font-weight: 800;
+  margin: 0px 0px; 
+  padding: 2px;
+}
+h1 {
+  font-size: 1.5em;
+  padding: 2px 3px;
+  width:auto;
+  border: 3px ridge hsla(240, 100%, 35%, 1);
+  border-radius: 10px ;
+ }
+p.txty {
+  color: hsl(240, 100%, 40%);
+  background-color: hsla(240, 100%, 95%, 0.8);
+  font-weight: 700;
+  border-radius: 10px;
+  margin: 3px;
+  padding: 3px;
+    text-align: center;
+  line-height: 1em;
+  font-size: 1.2em;
+}
+p.kont {
+  color: hsl(240, 100%, 40%);
+  background-color: hsla(240, 100%, 95%, 0.7);
+  font-family: 'Oldenburg', "Lucida Grande", sans-serif;
+  font-weight: 800;
+  border-radius: 10px;
+  margin: 10px auto;
+  padding: 10px;
+  width: 95%;
+  margin: 3px;
+  padding: 3px;
+    text-align: center;
+  line-height: 1.2em;
+  font-size: 1.2em;
+}
+div.artbx {
+        display: -webkit-flex;
+  display: flex;
+       width: 100%;
+       height: auto;
+flex-flow: column wrap;
+  justify-content:space-around;
+}
+div.artimg {
+       width: 100%;
+       height: auto;
+}
+img.artcls {
+       width: 100%;
+       height: auto;
+       vertical-align: middle;
+}
+div.sidetxt {
+     height: auto;
+     width: 100%;
+}
+
+.ttl {
+     height: auto;
+     width: 100%;
+     line-height: 1;
+     font-weight: 800;
+     font-size: 1.1em;
+}
+.cont {
+     width: 100%;
+     height: auto;
+     position: relative;
+     font-weight: 600;
+     font-size:0.9em;  
+     border: 2px solid hsla(240, 100%, 94%, 1);
+}
+.container {
+    display: inline-block;
+    cursor: pointer;
+}
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+  .topnav.change {
+    position: relative;
+    background-color: hsla(240, 100%, 60%, 0.6);
+}
+  .topnav.change::after {
+  content: "";
+  background:  url("../../img/bkg/dark_wood2000.svg") center /100% repeat;
+  opacity: 0.9;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}    
+   .topnav.change a {
+    float: right;
+    display: block;
+    text-align: center;
+    position: relative;
+  }
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+}
+#downBtn {
+  display: block;
+  z-index: 99;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0px 15px 20px;
+  background-color: hsla(240, 100%, 35%, 0.0);
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+    border-radius: 20px;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0px;
+  background-color: hsla(240, 100%, 35%, 0.0);
+}
+i.up {
+  border: solid hsla(240, 100%, 35%, 1);
+  border-width: 0 15px 15px 0;
+  display: inline-block;
+  padding: 20px;
+  transition: 0.6s;
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);    
+}
+i.up:hover {
+  border: solid hsl(210, 100%, 80%);
+  border-width: 0 20px 20px 0;
+  display: inline-block;
+  padding: 20px;
+}
+i.down {
+  margin: 0px;
+  border: solid hsla(0, 0%, 100%, 0.99);
+  border-width: 0 15px 15px 0;
+  display: inline-block;
+  padding: 20px;
+   transition: 0.8s;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+i.down:hover {
+  border: solid hsl(210, 100%, 80%);
+  border-width: 0 20px 20px 0;
+  display: inline-block;
+  padding: 20px;
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.8s;
+    animation-name: zoom;
+    animation-duration: 0.8s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes zoom {
+    from {transform: scale(0.2)} 
+    to {transform: scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 100px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}

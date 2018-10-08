@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<title>Vinařství Tománkovi</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="../styles/css/style.css">
+<link href='http://fonts.googleapis.com/css?family=Exo+2&subset=latin,latin-ext' rel='stylesheet' type='text/css' >
+<link href="https://fonts.googleapis.com/css?family=Stoke" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Cardo&subset=latin,latin-ext' rel='stylesheet' type='text/css' /> 	
+<link href="https://fonts.googleapis.com/css?family=Oldenburg" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet"> 
+<script>
+window.onload = function() {
+    var element = document.createElement("script");
+    element.src = "../scripts/before/slide.js";
+    document.body.appendChild(element);
+};  
+</script>
+</head>
+<body>
+<header>
+<div class="header">
+<nav>  
+<div class="topnav" id="myTopnav">
+<div class="container" onclick="myFunction()">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div>
+  <a href="index.html">Úvod</a>
+  <a href="historie.html">Historie</a>
+  <a href="prodej.html">Prodej vína</a>
+  <a href="rouby.html">Rouby a podnože</a>
+  <a href="odrudy.html">Odrůdy</a>
+  <a href="clanky.html">Články</a>  
+  <a href="kontakt.html">Kontakt</a>
+</div>
+</nav>
+<div class="slideshow-container">
+<div class="mySlides fade">
+  <div class="numbertext">1 / 5</div>
+  <img class="sld" src="../img/bkg/vineyard_spring_wire1920x1080.jpg">    
+  <div class="text">Vinice</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">2 / 5</div>
+  <img class="sld" src="../img/bkg/leaf_sun_red1920x1080.jpg">
+  <div class="text">List</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+    <img class="sld" src="../img/bkg/erb_kameny1920x1080.jpg">
+  <div class="text">Znak</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">4 / 5</div>
+  <img class="sld" src="../img/bkg/vine-leaves1920x1080.jpg">
+  <div class="text">Listy</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">5 / 5</div>
+  <img class="sld" src="../img/bkg/grapes_multi1920x1080.jpg">
+  <div class="text">Hrozny</div>
+</div>
+</div>
+<div class="tite">Vinařství Tománkovi</div>
+  <img class="erb" src="../img/lgo/znak_drevo_1024x768.svg" alt="znak">
+<span class="mez"><button onclick="downFunction()" id="downBtn" title="Go down"><i class="down"></button></i></span>  
+<div class="dots">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+</div>
+</header>  
+<div class="titul"><h1>Odrůdy</h1></div>   
+  <div class="odrudy">
+            
+    <div class="odruda">
+    <div class="name"><a class="lnk" href="sevar.html">Sevar</a></div >	
+    <div class="karta"><a class="obrzk" href="sevar.html"><img class="kar" src="../img/cont/sevar_hrozen1024x768.jpg"  alt="Sevar"></a></div>
+</div> 
+
+    <div class="odruda">
+    <div class="name"><a class="lnk" href="vitra.html">Vitra</a></div >	
+    <div class="karta"><a class="obrzk" href="vitra.html"><img class="kar" src="../img/cont/vitra_hrozen1024x768.jpg"  alt="Vitra"></a></div>
+</div> 
+
+    <div class="odruda">
+    <div class="name"><a class="lnk" href="pola.html">Pola</a></div >	
+    <div class="karta"><a class="obrzk" href="pola.html"><img class="kar" src="../img/cont/pola_hrozen1024x768.jpg"  alt="Pola"></a></div>
+</div> 
+
+    <div class="odruda">
+    <div class="name"><a class="lnk" href="mery.html">Mery</a></div >	
+    <div class="karta"><a class="obrzk" href="mery.html"><img class="kar" src="../img/cont/mery_hrozny1024x768.jpg"  alt="Mery"></a></div>
+</div> 
+
+    <div class="odruda">
+    <div class="name"><a class="lnk" href="mopr.html">Muškát moravský</a></div >	
+    <div class="karta"><a class="obrzk" href="mopr.html"><img class="kar" src="../img/cont/mopr_hrozen1024x768.jpg"  alt="Muškát moravský"></a></div>
+</div> 
+ 
+	 </div>
+<div class="rada">	 
+</div>
+<div id="myModal" class="modal">
+  <span class="close">×</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>  
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="up"></i></button>
+<div class="footer">
+<div class="foo">
+Ing. Alois Tománek<br>
+šlechtitel révy vinné<br>
+Boršice 671<br>
+<a href="mailto:tomanek.alois@borsice.net">tomanek.alois@borsice.net</a><br></div>
+<div class="foo">Prodejní doba:<br>
+pondělí – pátek: 16 – 19 hodin <br>
+sobota: 9 – 15 hodin <br>
+v neděli a o svátcích zavřeno<br>
+2018 © Vinařství Tománkovi</div>
+ <div class="foo">  <a class="footer" href=" https://en.mapy.cz/s/24ZK1">
+  <img class="fot" src="../img/lgo/mapy.svg" alt="mapa">
+  </a></div>
+   <div class="foo"> <img class="fot" src="../img/lgo/erb_blue.svg" alt="logo">
+</div>
+</div>
+</body>
+</html>
