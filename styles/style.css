@@ -200,6 +200,11 @@ h2.clip_text {
     width: 50vw;
 }
 
+.banner_wide {
+    height: 100%;
+    width: 100vw;
+}
+
 .banner_pic {
     height: 100%;
     width: 100%;
