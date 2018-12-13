@@ -99,7 +99,7 @@ header.short_top {
 }
 
 #top_prodej {
-    background-image: url(../img/sld/stanice_center_front_short.jpg);
+    background-image: url(../img/sld/stanice_front_near_zima.jpg);
 }
 
 #top_rouby {
@@ -111,7 +111,7 @@ header.short_top {
 }
 
 #top_kontakt {
-    background-image: url(../img/sld/stanice_right_front_long.jpg);
+    background-image: url(../img/sld/stanice_front_left_long_zima.jpg);
 }
 
 #top_clanky {
@@ -196,8 +196,8 @@ h2.clip_text {
 }
 
 .banner_center {
-    height: 100%;
-    width: 50vw;
+    height: 90%;
+    width: 80vw;
 }
 
 .banner_wide {
@@ -402,11 +402,11 @@ nav.short_nav {
 } 
 
 #p3i1 {
-    background-image: url(../img/bkhd/stanice_right_front_long_top.jpg);     
+    background-image: url(../img/bkhd/stanice_front_right_zima.jpg);     
 }  
 
 #p3i1.lazyback {
-    background-image: url(../img/bkg/stanice_right_front_long_top.jpg);     
+    background-image: url(../img/bkg/stanice_front_right_zima.jpg);     
 } 
     
 #p3i2 {
@@ -474,27 +474,27 @@ nav.short_nav {
 } 
     
 #p5i2 {
-    background-image: url(../img/bkhd/stanice_right_short_bright.jpg);     
+    background-image: url(../img/bkhd/stanice_front_side_zima.jpg);     
 }  
 
 #p5i2.lazyback {
-    background-image: url(../img/bkg/stanice_right_short_bright.jpg);     
+    background-image: url(../img/bkg/stanice_front_side_zima.jpg);     
 } 
     
 #p5i3 {
-    background-image: url(../img/bkhd/stanice_vysilac_vinice_back.jpg);     
+    background-image: url(../img/bkhd/stanice_vysilac_back_zima.jpg);     
 } 
 
 #p5i3.lazyback {
-    background-image: url(../img/bkg/stanice_vysilac_vinice_back.jpg);     
+    background-image: url(../img/bkg/stanice_vysilac_back_zima.jpg);     
 } 
     
 #p5i4 {
-    background-image: url(../img/bkhd/stanice_back_right_cesta.jpg);     
+    background-image: url(../img/bkhd/stanice_left_cesta_zima.jpg);     
 } 
 
 #p5i4.lazyback {
-    background-image: url(../img/bkg/stanice_back_right_cesta.jpg);     
+    background-image: url(../img/bkg/stanice_left_cesta_zima.jpg);     
 } 
     
         
